@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    /* border: solid 1px black; */
+}
+body {
+    width: 100%;
+    max-width: 1440px;
+}
+/* ----------header --------  */
+header {
+    width: 100%;
+    position: fixed;
+    padding: 20px;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header img{
+    width: 180px;
+}
+header .book{
+    font-size: 14px;
+    color: #000;
+    background-color: wheat;
+    padding: 10px 16px;
+    font-weight: 600;
+}
+header .book:hover{
+    color: #000;
+    background-color: rgb(255, 172, 18);
+    transition: 0.4s;
+}
+header .book:active{
+    color: #fff;
+}
+/* ---------- hero --------- */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/banner.avif);
+    background-size: cover;
+    background-position: top center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+small {
+    display: block;
+    text-align: center;
+    color: deepskyblue;
+}
+/* ---------- #sec01 ----------- */
+#sec01 {
+    width: 100%;
+    padding-top: 100px;
+}
+.txt {
+    width: 680px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.txt h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.txt p {
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+}
+.wrap {
+    display: flex;
+}
+.box {
+    width: 20%;
+    height: 220px;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ---------- #sec02 ---------- */
+#sec02 {
+    text-align: center;
+    background-color: #eee;
+    padding: 100px 40px 40px 40px;
+}
+#sec02 .txt {
+    background-color: wheat;
+    padding: 40px;
+}
+h4 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.8;
+    text-align: center;
+}
+.p-img img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    margin-bottom: 40px;
+}
+/* --------- #sec03 --------- */
+#sec03 {
+    padding: 100px 70px 30px 70px;
+}
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 25%;
+    background-color: #eee;
+    padding: 20px;
+    position: relative;
+}
+.card h4 {
+    margin-bottom: 0px;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    
+}
+.show-txt a {
+    color: #fff;
+}
+.show-txt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 24px;
+    transition: opacity 0.3s;
+}
+.card:hover .show-txt {
+    opacity: 1;
+}
+/* --------- #sec04 --------- */
+#sec04 {
+    padding: 100px;
+}
+#sec04 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px
+}
+.item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.social a {
+    color: #000;
+}
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+.social svg {
+    margin-right: 10px;
+}
+span {
+    font-size: 20px;
+    line-height: 20px;
+}
+/* --------- #sec05 --------- */
+#sec05 {
+    text-align: center;
+    background-color: #eee;
+    padding: 100px 40px 40px 40px;
+}
+#sec05 .txt {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: wheat;
+}
+#sec05 p {
+    line-height: 1.8;
+}
+
+/* ---------- footer ---------- */
+.ft-logo {
+    width: 100px;
+    margin-bottom: 40px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0px;
+}
+footer small {
+    color: #000;
+}
+
+
+@media screen and (max-width: 680px) {
+    header img{
+        width: 120px;
+    }
+    header .book{
+        font-size: 14px;
+        color: #000;
+        background-color: wheat;
+        padding: 6px 12px;
+        font-weight: 700;
+    }
+    .txt h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .p-img img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+    #sec03 .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+    #sec03 .card {
+        width: 100%;
+    }
+    #sec04 .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px
+    }
+    .card h4 {
+        margin-bottom: 20px;
+    }
+    #sec05 iframe {
+        width: 300px;
+    }
+    .ft-logo {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .show-txt p{
+        font-size: 30px;
+    }
+    footer {
+        padding: 60px 0px;
+    }
+}
