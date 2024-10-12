@@ -13,7 +13,8 @@ body {
 header {
     width: 100%;
     position: fixed;
-    padding: 20px;
+    padding: 20px 0px;
+    z-index: 1;
 }
 nav {
     width: 100%;
@@ -63,23 +64,26 @@ small {
 #sec01 {
     width: 100%;
     padding-top: 100px;
+    text-align: center;
 }
 .txt {
-    width: 680px;
-    max-width: 80%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+    box-sizing: border-box;
 }
 .txt h2 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 60px;
+    padding: 20px;
 }
 .txt p {
     line-height: 1.8;
     font-size: 16px;
     font-weight: 400;
+    padding: 20px;
 }
 .wrap {
     display: flex;
@@ -196,16 +200,15 @@ span {
 #sec05 {
     text-align: center;
     background-color: #eee;
-    padding: 100px 40px 40px 40px;
+    padding: 60px 300px;
 }
 #sec05 .txt {
     margin-top: 60px;
     margin-bottom: 20px;
-    padding: 40px;
     background-color: wheat;
 }
 #sec05 p {
-    line-height: 1.8;
+    line-height: 1.4;
 }
 
 /* ---------- footer ---------- */
@@ -223,6 +226,10 @@ footer small {
 
 
 @media screen and (max-width: 680px) {
+    #hero {
+        height: 280px;
+        background-position: top center;
+    }
     header img{
         width: 120px;
     }
@@ -233,8 +240,22 @@ footer small {
         padding: 6px 12px;
         font-weight: 700;
     }
+    .box {
+        width: 30%;
+        height: 80px;
+    }
     .txt h2 {
-        font-size: 22px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .txt p {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 14px;
     }
     p {
         font-size: 12px;
@@ -253,17 +274,24 @@ footer small {
     #sec03 .card {
         width: 100%;
     }
+    #sec04 {
+        padding: 10px 0px;
+    }
     #sec04 .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px
     }
     .card h4 {
+        font-size: 18px;
         margin-bottom: 20px;
     }
-    #sec05 iframe {
-        width: 300px;
+    #sec05 {
+        padding: 40px;
     }
+    /* #sec05 iframe {
+        width: 300px;
+    } */
     .ft-logo {
         width: 100px;
         margin-bottom: 20px;
@@ -272,6 +300,6 @@ footer small {
         font-size: 30px;
     }
     footer {
-        padding: 60px 0px;
+        padding: 10px 20px;
     }
 }
